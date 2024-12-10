@@ -190,8 +190,7 @@ body {
   font-size: 18px;
 }
 
-
-.post__content p:last-of-type  {
+.post__content p:last-of-type {
   margin-block-start: 27px;
   margin-block-end: 25px;
 }
