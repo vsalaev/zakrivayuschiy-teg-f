@@ -1,65 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --accent-font: 'PressStart2P-Regular';
+    --accent-font: 'PressStart2P';
     --font: 'Inter-Variable';
-    --font_weight: 400;
-    --font_weight-title: 700;
-    --text-color: rgb(0, 0, 0);
+    --font-weight: 400;
+    --title_font-weight: 700;
     --background-image: 
-        repeating-linear-gradient(90deg, #d3d3d3, rgba(211, 211, 211, 0) 4px), 
-        repeating-linear-gradient(#d3d3d3, rgba(211, 211, 211, 0) 4px), 
+        repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), 
+        repeating-linear-gradient(#d3d3d3, transparent 2px), 
         linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
-    --background_header: white;
-    --button_disabled-color: #0009;
-    --post_background-color: white;
-    --blend_mode_button-color: white;
-    --heart_0_fill-color: #000;
-    --heart_1_fill-color: #000;
-    --heart_2_fill-color: #ff0000;
-    --heart_3_fill-color: #ff0000;
-
+    --backup_background-color: #e7e7e7;
+    --text-color: #000;
+    --header_background-color: #fff;
+    --menu_item_disabled-color: #0009;
+    --post_watermark_stroke-color: #fff;
+    --post_background-color: #fff;
+    --blend_mode_button-color: #fff;
+    --blend_mode-color: #000;
     --heart_fill-color: #000;
     --heart_fill_accent-color: #ff0000;
-}
-
-
-@media (width <= 375px) {
-    .page {
-        margin: 0;
-        inline-size: 375px;
-    }
-
-    .footer__save-button {
-        flex-direction: column;
-    }
-
-    .floppy {
-        inline-size: 28px;
-    }
-
-    .footer__save-button:before {
-        height: 80px;
-      }
-
-    .dialog {
-        padding-inline: 40px;
-    }
-}
-
-@media (width > 375px) {
-    .footer__save-button {
-        flex-direction: row;
-    }
-
-    .floppy {
-        inline-size: 21px;
-    }
-
-    .footer__save-button:before {
-        height: 51px;
-      }
-
-      .dialog {
-        padding-inline: 30px;
-    }
 }

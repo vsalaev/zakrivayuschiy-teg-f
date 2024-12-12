@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="apple-touch-icon" href="./images/favicon.png">
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xm1">
     <script src="./scripts/set-theme.js"></script>
   </head>
@@ -22,7 +23,10 @@
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button">
               Темно
             </button>
           </li>
@@ -37,7 +41,10 @@
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button" 
+              data-theme="light"
+              class="theme-menu__button">
               Светло
             </button>
           </li>
@@ -65,29 +72,29 @@
           <p>
             Начало полное ожиданий веселых незабываемых приключений, неспешного обучения и множества разной информации.
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
-                <g class="heart">
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
+                <g class="g_heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -101,7 +108,7 @@
         <div class="post__illustration">
           <p class="watermark">&lt;/HTML&gt;</p>
           <img
-            class="post__image saturate-0_2"
+            class="post__image less_saturate"
             loading="lazy"
             src="./images/image.png"
             alt="Минивен у дерева и костра, отображение нашего похода. С эффектом насыщенности пониженной"
@@ -114,29 +121,29 @@
           <p>
             Уверенность не пропала, что можно справится со всем, все как обычно делаю и не вижу никаких я стен.
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -150,7 +157,7 @@
         <div class="post__illustration">
           <p class="watermark">&lt;CSS&gt;</p>
           <img
-            class="post__image saturate-4_5"
+            class="post__image more_saturate"
             loading="lazy"
             src="./images/image.png"
             alt="Минивен у дерева и костра, отображение нашего похода. С эффектом насыщенности повышенной"
@@ -163,29 +170,29 @@
           <p>
             Не зря писали про "чистый лист", не зря внимание вы обращали, когда бы уже внимательнее быть. 
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -212,29 +219,29 @@
           <p>
            Теперь от знаю я как надо, готов идти и изучить и применить и в целом все. Конечно, только есть моменты, что чуство новизны, и понимание мвоей некомпетененсточти постоянно слишком ново для меня.
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -261,29 +268,29 @@
           <p>
             Да, есть те кто рядом, и это хорошо, у них наверное тоже рядом кто-то, а мне что до того, мое такое отношение, что лишь зайдя в тупик, могу себе позволить кого-либо чем-либо как-либо "грузить". 
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -310,29 +317,29 @@
           <p>
             Очерердное понимание, того, что новое не прекращается и кажется уже вот сдал, уже вот вот как то-то что-то чуть начнет захоидить в сознание попроще, но тем не менее, такие же моменты сложные, и еще сложнее. Как хорошо, что есть для этих мыслей отдельные спринты.
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -358,29 +365,29 @@
           <p>
             Свою я контрацию черпал из музыки, той что слушаю, из перерывов. жаль, что из успехов было тяжело черпать сил, с успехами все чуточку сложнее. Так или иначе источники описаны в работе "той" были хорошо. Благодарю.
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -406,29 +413,29 @@
           <p>
             Много мыслей, от - зачем мне вообще это нужно, не успеваю в сроки, до того. а почему бы и нет, это новоое и нужно "шевелиться", что бы шаг за шагом идти куда спланировал. "Ровно" не может всё  получится, вопрос в том к себе, как реагировать на эти "неровности". Вот мой ответ. 
           </p>
-          <button class="card__icon-button">
-            <svg viewBox="0 0 39 30" class="like-icon"> 
+          <button type="button" class="card__icon-button" aria-label="Сердечко">
+            <svg viewBox="0 0 39 30" class="like-icon" aria-hidden="true">
                 <g class="heart">
                     <path 
-                      class="heart-0" 
+                      class="heart-contour" 
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     />
                     <path 
-                      class="heart-1" 
+                      class="heart-body" 
                       d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     />
                     <path 
-                      class="heart-2" 
+                      class="heart-center" 
                       d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
                     />
                 </g>
                   <path 
-                    class="heart-3" 
+                    class="heart-sparks" 
                     d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
                   />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button card__like-button">
             <span class="button__text">
               Like
             </span> 
@@ -436,21 +443,19 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <button 
-        class="footer__save-button"
-        type="button" 
-        onclick="window['save'].showModal()" 
-        aria-controls="save"
-      >
-      <svg viewBox="0 0 39 39" class="floppy">
-        <use href="./images/floppy.svg#floppy"/>
-      </svg>
-      <span class="button__text">
-        Сохранить на память
-      </span> 
-      </button>
-    </footer>
+    <button
+      class="button save-button"
+      type="button" 
+      onclick="window['save'].showModal()" 
+      aria-controls="save"
+    >
+    <svg viewBox="0 0 39 39" class="floppy">
+      <use href="./images/floppy.svg#floppy"/>
+    </svg>
+    <span class="button__text">
+      Сохранить на память
+    </span> 
+    </button>
     <dialog 
       id="save" 
       class="dialog">
@@ -461,11 +466,14 @@
         Вставьте дискету, чтобы продолжить
       </p> 
       <button
+        type="button"
         onclick="window['save'].close()"
-        class="ok__button">
-        ОК
+        class="button ok__button">
+        <span class="button__text">
+          ok
+        </span>
       </button>
-  </dialog>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
