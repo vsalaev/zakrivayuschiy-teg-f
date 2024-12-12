@@ -82,7 +82,7 @@
   transition: fill 0.3s 0.05s;
 }
 
-.card__icon-button:hover .heart-center  {
+.card__icon-button:hover .heart-center {
   fill: var(--heart_fill-color);
   transition: fill 0.3s;
 }
@@ -97,7 +97,7 @@
   fill: var(--heart_fill-color) ;
 }
 
-.heart-sparks  {
+.heart-sparks {
   fill: var(--heart_fill-color);
   opacity: 0;
 }
