@@ -49,12 +49,13 @@
 }
 
 .heart-contour {
-  fill: var(--heart_fill-color);
+  fill: var(--heart-fill-color);
+  transition: fill 0.1s linear;
 }
 
 .is-liked .heart-contour {
-  fill: var(--heart_fill_accent-color);
-  transition: fill 0.3s 0.03s;
+  fill: var(--heart-fill-accent-color);
+  transition: fill 0.3s 0.06s;
 }
 
 .heart-body {
@@ -63,18 +64,21 @@
 }
 
 .card__icon-button:hover .heart-body {
-  fill: var(--heart_fill-color);
+  fill: var(--heart-fill-color);
   transition: fill 0.3s 0.05s;
 }
 
 .card__icon-button:active .heart-body {
-  --heart_fill-color: var(--heart_fill_accent-color);
+  fill: var(--heart-fill-accent-color);
   transition: fill 0.3s 0.05s;
 }
 
 .is-liked .heart-body {
-  --heart_fill-color: var(--heart_fill_accent-color);
-  fill: var(--heart_fill-color) ;
+  fill: var(--heart-fill-accent-color);
+}
+
+.card__icon-button:hover .is-liked .heart-body {
+  fill: var(--heart-fill-accent-color);
 }
 
 .heart-center {
@@ -82,29 +86,32 @@
   transition: fill 0.3s 0.05s;
 }
 
+.card__icon-button:hover .is-liked .heart-center {
+  fill: var(--heart-fill-accent-color);
+}
+
 .card__icon-button:hover .heart-center {
-  fill: var(--heart_fill-color);
+  fill: var(--heart-fill-color);
   transition: fill 0.3s;
 }
 
 .card__icon-button:active .heart-center {
-  --heart_fill-color: var(--heart_fill_accent-color);
+  fill: var(--heart-fill-accent-color);
   transition: fill 0.3s;
 }
 
 .is-liked .heart-center {
-  --heart_fill-color: var(--heart_fill_accent-color);
-  fill: var(--heart_fill-color) ;
+  fill: var(--heart-fill-accent-color);
+  transition: fill 0.3s;
 }
 
 .heart-sparks {
-  fill: var(--heart_fill-color);
+  fill: var(--heart-fill-accent-color);
   opacity: 0;
 }
 
 .is-liked .heart-sparks {
   animation: sparks 0.3s 0.3s ease-in;
-  --heart_fill-color: var(--heart_fill_accent-color);
 }
 
 .is-liked {

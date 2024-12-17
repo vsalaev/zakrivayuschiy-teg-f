@@ -7,21 +7,21 @@
 
 :root.theme-light {
     --font-weight: 400;
-    --title_font-weight: 700;
+    --title-font-weight: 700;
     --background-image:
-        repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), 
-        repeating-linear-gradient(#d3d3d3, transparent 2px), 
+        repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent  2px 4px),
+        repeating-linear-gradient(#d3d3d3  0px 2px, transparent  2px 4px),
         linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
-    --backup_background-color: #e7e7e7;
+    --backup-background-color: #e7e7e7;
     --text-color: #000;
-    --header_background-color: #fff;
-    --menu_item_disabled-color: #0009;
-    --post_watermark_stroke-color: #fff;
-    --post_background-color: #fff;
-    --blend_mode_button-color: #fff;
-    --blend_mode-color: #000;
-    --heart_fill-color: #000;
-    --heart_fill_accent-color: #ff0000;
+    --header-background-color: #fff;
+    --menu-item-disabled-color: #0009;
+    --post-watermark-stroke-color: #fff;
+    --post-background-color: #fff;
+    --blend-mode-button-color: #fff;
+    --blend-mode-color: #000;
+    --heart-fill-color: #000;
+    --heart-fill-accent-color: #ff0000;
 }
 
 
@@ -29,41 +29,40 @@
 
 :root.theme-dark {
     --font-weight: 465;
-    --title_font-weight: 785;
+    --title-font-weight: 785;
     --background-image: 
-        repeating-linear-gradient(90deg, #000, transparent 2px), 
-        repeating-linear-gradient(#000, transparent 2px), 
+        repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px), 
+        repeating-linear-gradient(#000 0px 2px, transparent 2px 4px), 
         linear-gradient(180deg, #007f0c 0%, #004306 100%);
-    --backup_background-color: #007f0c;
+    --backup-background-color: #007f0c;
     --text-color: #00cc14;
-    --header_background-color: #000;
-    --menu_item_disabled-color: #00cc1499;
-    --post_watermark_stroke-color: #000;
-    --post_background-color: #000;
-    --blend_mode_button-color: #00cc14;
-    --blend_mode-color: #00cc14;
-    --heart_fill-color: #00cc14;
-    --heart_fill_accent-color: #ff0000;
-
+    --header-background-color: #000;
+    --menu-item-disabled-color: #00cc1499;
+    --post-watermark-stroke-color: #000;
+    --post-background-color: #000;
+    --blend-mode-button-color: #00cc14;
+    --blend-mode-color: #00cc14;
+    --heart-fill-color: #00cc14;
+    --heart-fill-accent-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --font-weight: 465;
-        --title_font-weight: 785;
+        --title-font-weight: 785;
         --background-image: 
-        repeating-linear-gradient(90deg, #000, rgba(0, 0, 0, 0) 4px), 
-        repeating-linear-gradient(#000, rgba(0, 0, 0, 0) 4px), 
+        repeating-linear-gradient(90deg, #000 0px 2px, rgba(0, 0, 0, 0) 2px 4px), 
+        repeating-linear-gradient(#000  0px 2px, rgba(0, 0, 0, 0) 2px 4px), 
         linear-gradient(180deg, #007F0C 0%, #004306 100%);
-        --backup_background-color: #007f0c;
+        --backup-background-color: #007f0c;
         --text-color: #00cc14;
-        --header_background-color: black;
-        --menu_item_disabled-color: #00cc1499;
-        --post_watermark_stroke-color: #000;
-        --post_background-color: black;
-        --blend_mode_button-color: #00cc14;
-        --blend_mode-color: #00cc14;
-        --heart_fill-color: #00cc14;
-        --heart_fill_accent-color: #ff0000;
+        --header-background-color: black;
+        --menu-item-disabled-color: #00cc1499;
+        --post-watermark-stroke-color: #000;
+        --post-background-color: black;
+        --blend-mode-button-color: #00cc14;
+        --blend-mode-color: #00cc14;
+        --heart-fill-color: #00cc14;
+        --heart-fill-accent-color: #00cc14;
     }
 }
