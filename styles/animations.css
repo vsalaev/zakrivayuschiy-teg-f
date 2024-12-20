@@ -55,35 +55,37 @@
 
 .is-liked .heart-contour {
   fill: var(--heart-fill-accent-color);
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .heart-body {
   fill: transparent;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .heart-body {
   fill: var(--heart-fill-color);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .card__icon-button:active .heart-body {
   fill: var(--heart-fill-accent-color);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .is-liked .heart-body {
   fill: var(--heart-fill-accent-color);
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .is-liked .heart-body {
   fill: var(--heart-fill-accent-color);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .heart-center {
   fill: transparent;
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.06s linear; /* эту задержку транзишн, для возращения из ховера, я изменил, но в заднии четко указано, -  при наведении курсора перекрашивайте с задержкой в 0.05s в течение 0.3s. */
 }
 
 .card__icon-button:hover .is-liked .heart-center {
@@ -92,17 +94,17 @@
 
 .card__icon-button:hover .heart-center {
   fill: var(--heart-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .heart-center {
   fill: var(--heart-fill-accent-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .is-liked .heart-center {
   fill: var(--heart-fill-accent-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .heart-sparks {
